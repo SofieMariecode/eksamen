@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+    font-family: "Editorial thin Italic";
+    src: url(../fonts/PPEditorialNew-ThinItalic.otf);
+}
+
+h2 {
+    font-family: Inter;
+    font-size: 20pt;
+}
+
+header {
+    font-family: Inter;
+    font-size: 17pt;
+}
+
+header a{
+ color: black;
+}
+
+.footer {
+font-family: Inter;
+font-size: 9pt;
+}

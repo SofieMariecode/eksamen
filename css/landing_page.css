@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  height: 100%;
+}
+body {
+  background-color: #E7FFCF;
+}
+
+main {
+  margin: 0 25px 0px 25px;
+}
+
+/* Header u. media query*/
+
+.header {
+  margin-right: 25px;
+  margin-left: 25px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: end;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu_items {
+  display: none;
+  text-decoration: underline;
+  line-height: 30pt;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.line {
+  height: 2px;
+  width: 28px;
+  background-color: black;
+}
+
+.burger_items {
+  display: flex;
+  flex-direction: column;
+  line-height: 27pt;
+}
+.menu-wrapper {
+  margin-right: 15pt;
+  text-align: right;
+  z-index: 2;
+  position: absolute;
+  right: 5px;
+  text-decoration: underline;
+  padding-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* header bredformat */
+
+@media (width > 770px) {
+  .burger {
+    display: none;
+  }
+
+  .menu_items {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+
+  .burger_items {
+    display: none;
+  }
+}
+
+/* emblem */
+
+.emblem img {
+  margin-top: 30px;
+  padding-bottom: 10px;
+  width: 75px;
+}
+
+/* titl */
+
+.titel {
+  font-family: "Editorial thin Italic";
+  font-size: 40pt;
+  line-height: 44pt;
+  padding-bottom: 200px;
+}
+
+/* undertitel */
+.undertitel {
+  font-size: 10pt;
+  font-family: Inter;
+  line-height: 40pt;
+}
+
+/* underrubrik */
+
+.urubrik {
+  font-family: Inter;
+  font-size: 12pt;
+  line-height: 14pt;
+  padding-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+.container button {
+  background-color: transparent;
+  border: solid;
+  border-width: 1.4px;
+  width: 280px;
+  height: 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 13pt;
+}
+
+/*bredformat */
+@media (width > 774px) {
+  .titel {
+    font-size: 76pt;
+    line-height: 79pt;
+    padding-bottom: 300px;
+  }
+
+  .undertitel {
+    font-size: 10pt;
+    font-family: Inter;
+    line-height: 40pt;
+  }
+
+  .titel_emblem {
+    display: flex;
+    gap: 60px;
+    margin-top: -50px;
+  }
+
+  .emblem img {
+    display: flex;
+    width: 120px;
+    height: 150px;
+    margin-top: 23px;
+  }
+
+  .test {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+.footer {
+  margin-top: 40px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
