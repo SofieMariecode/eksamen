@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 img {
@@ -9,6 +9,8 @@ img {
 }
 body {
   background-color: #e7ffcf;
+  margin-left: 20pt;
+  margin-right: 20pt;
 }
 
 main {
@@ -18,8 +20,7 @@ main {
 /* Header u. media query*/
 
 .header {
-  margin-right: 25px;
-  margin-left: 25px;
+
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
@@ -56,13 +57,20 @@ height: 75px;
 .burger_items {
   display: flex;
   flex-direction: column;
+  line-height: 27pt;
 }
 
 .menu-wrapper {
   margin-right: 15pt;
+  margin-top: -40pt;
   text-align: right;
+  z-index: 2;
+  position: absolute;
+  right: 5px;
   text-decoration: underline;
+
 }
+
 
 .hidden {
   display: none;
@@ -95,3 +103,43 @@ height: 75px;
   flex-direction: row;
   justify-content: space-between;
 }
+
+
+/* projektside */
+
+
+.projekter_body header{
+padding-bottom: 7em;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.tekst_projekter {
+  padding-bottom: 2em;
+}
+
+.tekst_projekter p{
+  padding-top: 10px;
+
+}
+
+/* bredformat site */
+
+
+@media (width > 770px) {
+  .tekst_projekter p {
+    width: 600px;
+padding-top: 20px;
+  }
+
+  .tekst_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+}
+

@@ -6,10 +6,52 @@
     font-family: "Editorial thin Italic";
     src: url(../fonts/PPEditorialNew-ThinItalic.otf);
 }
+h1 {
+    font-family: "Editorial thin Italic";
+    font-size: 30pt;
+    padding-bottom: 6pt;
+}
 
 h2 {
     font-family: Inter;
-    font-size: 20pt;
+    font-weight: 500;
+    font-size: 10pt;
+    padding-bottom: 6pt;
+}
+
+h3 {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 10pt;
+    font-weight: 00;
+    padding-bottom: 6pt;
+}
+
+p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 9pt;
+    line-height: 12pt;
+}
+
+@media (width > 770px) {
+ 
+    h1 {
+        font-size: 40pt;
+    }
+    h2 {
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 15pt;
+        padding-bottom: 6pt;
+    }
+
+    p {
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 10pt;
+        line-height: 13pt;
+    }
 }
 
 header {
@@ -25,3 +67,10 @@ header a{
 font-family: Inter;
 font-size: 9pt;
 }
+
+.footer :nth-child(1){
+    font-family: "Editorial thin Italic";
+    font-size: 12pt;
+    font-weight: 400;
+    }
+    
