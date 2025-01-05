@@ -4,6 +4,8 @@
   box-sizing: content-box;
 }
 
+
+
 img {
   height: 100%;
 }
@@ -20,7 +22,6 @@ main {
 /* Header u. media query*/
 
 .header {
-
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
@@ -30,9 +31,9 @@ a {
   text-decoration: none;
 }
 
-.logo img{
- width: 60px;
-height: 75px;
+.logo img {
+  width: 60px;
+  height: 75px;
 }
 
 .menu_items {
@@ -68,12 +69,14 @@ height: 75px;
   position: absolute;
   right: 5px;
   text-decoration: underline;
-
 }
-
 
 .hidden {
   display: none;
+}
+
+.footer {
+  padding-top: 100px;
 }
 
 /* header bredformat */
@@ -104,12 +107,55 @@ height: 75px;
   justify-content: space-between;
 }
 
-
 /* projektside */
 
+.projekter_nav {
+  margin-top: -100px;
+  padding-bottom: 2em;
+  cursor: pointer;
+text-align: center;
+}
 
-.projekter_body header{
-padding-bottom: 7em;
+.projekter_nav button {
+  background-color: transparent;
+  border: solid;
+  border-width: 1.4px;
+  height: 30px;
+  border-radius: 30px;
+  font-size: 13pt;
+  padding: 0 10px 0 10px;
+}
+
+
+.projekter_btns:hover {
+  background-color: #79ff8d;
+}
+
+img {
+  overflow: hidden;
+  max-width: 100vw;
+  width: 100%;
+  height: auto;
+}
+
+.galleri_flex {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tobilleder_flex {
+  display: flex;
+  gap: 15px;
+}
+
+.firebilleder_flex {
+  display: block;
+}
+
+
+.projekter_body header {
+  padding-bottom: 7em;
 }
 
 .link {
@@ -120,26 +166,92 @@ padding-bottom: 7em;
   padding-bottom: 2em;
 }
 
-.tekst_projekter p{
-  padding-top: 10px;
-
+.button_gif {
+  width: 200px;
+  display: block;
+  margin: auto;
 }
 
+.moodboard {
+  padding-bottom: 40px;
+}
+
+.moodboard p {
+  width: 50vw;
+}
+
+.moodboard img {
+  width: 50vw;
+  padding-bottom: 10px;
+}
 /* bredformat site */
 
-
 @media (width > 770px) {
-  .tekst_projekter p {
-    width: 600px;
-padding-top: 20px;
+  .projekter_nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -100px;
+    padding: 0px 100px 100px 100px;
   }
 
-  .tekst_flex {
+  /* tekstdel + link*/
+  .tekst_projekter p {
+    width: 50vw;
+  }
+
+  .tekst_galleri {
+    padding-top: 2em;
+    width: 50vw;
+    padding-bottom: 4em;
+  }
+
+  .tekst_projekter {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    padding-bottom: em;
   }
 
+  .button_gif {
+    padding-right: 100px;
+    width: 220px;
+  }
+
+  /* moodboard*/
+
+  .moodboard {
+    display: flex;
+    gap: 20px;
+  }
+  .moodboard img {
+    width: 35vw;
+  }
+
+  .moodboard p {
+    width: 25vw;
+  }
+
+  /* galleri*/
+
+  .firebilleder_flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+  }
 }
 
+/* kodetsite */
+
+#kodetsite .projekter_btns:nth-child(1){
+background-color: #79ff8d;
+}
+
+#webdesign .projekter_btns:nth-child(4){
+  background-color: #79ff8d;
+  }
+
+#animation .projekter_btns:nth-child(7){
+    background-color: #79ff8d;
+    }
+  
