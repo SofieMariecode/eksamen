@@ -4,8 +4,6 @@
   box-sizing: content-box;
 }
 
-
-
 img {
   height: 100%;
 }
@@ -113,7 +111,7 @@ a {
   margin-top: -100px;
   padding-bottom: 2em;
   cursor: pointer;
-text-align: center;
+  text-align: center;
 }
 
 .projekter_nav button {
@@ -125,7 +123,6 @@ text-align: center;
   font-size: 13pt;
   padding: 0 10px 0 10px;
 }
-
 
 .projekter_btns:hover {
   background-color: #79ff8d;
@@ -151,8 +148,8 @@ img {
 
 .firebilleder_flex {
   display: block;
+  gap: 20px;
 }
-
 
 .projekter_body header {
   padding-bottom: 7em;
@@ -187,12 +184,6 @@ img {
 /* bredformat site */
 
 @media (width > 770px) {
-  .projekter_nav {
-    display: flex;
-    justify-content: space-between;
-    margin-top: -100px;
-    padding: 0px 100px 100px 100px;
-  }
 
   /* tekstdel + link*/
   .tekst_projekter p {
@@ -237,21 +228,50 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 15px;
+    gap: 10px;
   }
 }
 
 /* kodetsite */
 
-#kodetsite .projekter_btns:nth-child(1){
-background-color: #79ff8d;
+#kodetsite .projekter_btns:nth-child(1) {
+  background-color: #79ff8d;
 }
 
-#webdesign .projekter_btns:nth-child(4){
+#webdesign .projekter_btns:nth-child(4) {
   background-color: #79ff8d;
-  }
+}
 
-#animation .projekter_btns:nth-child(7){
-    background-color: #79ff8d;
-    }
-  
+#animation .projekter_btns:nth-child(7) {
+  background-color: #79ff8d;
+}
+
+#video .projekter_btns:nth-child(10) {
+  background-color: #79ff8d;
+}
+
+#rebranding .projekter_btns:nth-child(13) {
+  background-color: #79ff8d;
+}
+
+/* video */
+
+
+#oejne {
+  width: 35vw;
+}
+
+.flex_2-2 {
+  display: flex;
+  gap: 15px;
+}
+
+@media ( width>830px) {
+.projekter_nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -100px;
+  padding: 0px 100px 100px 100px;
+}
+}
+
